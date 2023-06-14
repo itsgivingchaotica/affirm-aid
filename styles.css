@@ -38,21 +38,91 @@ body{
 }
 
 .logo{
-    font-size: 2rem;
-    color: lightcoral;
+    font-size: 3rem;
     font-weight: 700;
+    color: white !important;
+    text-shadow: 0 0 5px #fff, 0 0 12px var(--bittersweet-shimmer), 0 0 20px #fff;
 }
 
-.about-btn{
-    color: rgb(118, 0, 49);
-    border: 1px solid rgb(118, 0, 49);
-    width: 120px;
+.nav-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--misty-rose);
+    z-index: 10;
+    border-bottom: solid;
+    border-color: var(--black-bean);
+    border-width: 0.2rem;
+    box-shadow: 0 2px 2px 2px var(--color-secondary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header {
+    background-color: var(--misty-rose);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: var(--misty-rose);
+}
+
+.navbar img{
+    max-width: 80px;
+}
+
+.navbar,
+a:link,
+a:visited {
+    color: black;
+    background-color: var(--misty-rose);
+}
+
+.home {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    background-color: var(--misty-rose);
+}
+
+.options{
+    display: flex;
+    justify-content:left;
+    background-color: var(--misty-rose);
+}
+
+.about-btn,.donate-btn{
+    color: var(--palatinate);
+    border: 1px solid var(--palatinate);
+    width: 160px;
     height: 40px;
     display: flex;
+    padding: 10px;
     justify-content: center;
     align-items: center;
     font-weight: 500;
     font-size: 0.9rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: var(--bittersweet-shimmer);
+    margin-right: 10px;
+}
+
+.about-btn:hover,.donate-btn:hover{
+    color: var(--citrine);
+    background-color: var(--ruddy-blue);
+    border: none;
+    font-size: 1.0rem;
+    box-shadow: 2px 2px 30px rgba(0,0,0,.07);
+    transition: all ease 0.35;
 }
 
 .main-container {
@@ -116,6 +186,7 @@ body{
     border: none;
     outline: none;
     font-size: 1.8rem;
+    margin-left: 20px;
 }
 
 .give-now-form .give-btn{
@@ -133,7 +204,7 @@ body{
     font-size: 1.8rem;
     margin-top: 15px;
     height: 0;
-
+    margin-left: 20px;
     background-color: var(--citrine);
 }
 
