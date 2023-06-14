@@ -223,8 +223,63 @@ a:visited {
     max-width: 1400px;
     margin: 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
+    /* align-items: center; */
+}
+
+.about-text{
+    margin: 40px 30px;
+    width:75%;
+}
+
+.about-services{
+    width: 25%;
+    margin: 40px 100px;
+}
+
+.service-list{
+    list-style-type: circle;
+        
+}
+
+#services{
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    margin: 30px auto 30px auto;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    border: 1px solid white;
+    border-radius: 12px;
     align-items: center;
+    box-shadow: 0 2px 4px 2px rgba(255, 67, 115, 0.5);
+}
+
+.service-img {
+    width: 200px;
+    height: 100px;
+    margin: 5px;
+}
+
+.service-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.service-text{
+    margin-right: auto;
+    margin: 20px;
+}
+
+.service-text strong{
+    color: var(--palatinate);
+    font-size: 1.0rem;
 }
 
 /* Donation styles */
