@@ -1,0 +1,226 @@
+*{
+    font-family: 'Jost', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: var(--misty-rose);
+        /* font-family: 'Klee One', cursive;
+        font-family: 'Mynerve', cursive; */
+}
+:root {
+    --palatinate: #581E60ff;
+    --lavender-pink: #FEACD8ff;
+    --steel-pink: #BE4FC8ff;
+    --salmon-pink: #FFA0AAff;
+    --ruddy-blue: #64ABFFff;
+    --claret: #8F2046ff;
+    --bright-pink-crayola: #FF4373ff;
+    --bittersweet-shimmer: #BD4945ff;
+    --black-bean: #3E1F23ff;
+    --misty-rose: #FEDDDEff;
+    --citrine: #EADA00ff;
+    --sky-blue: #8DD1E9ff;
+    --apple-green: #ADB60Eff;
+    --grape: #6B109Dff;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Jost', sans-serif;
+    background-image: url('');
+}
+
+.logo{
+    font-size: 2rem;
+    color: lightcoral;
+    font-weight: 700;
+}
+
+.about-btn{
+    color: rgb(118, 0, 49);
+    border: 1px solid rgb(118, 0, 49);
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.main-container {
+    max-width: 1400px;
+    margin: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-img{
+    max-width: 400px;
+}
+
+.main-img img{
+    width: 120%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+}
+
+.main-text{
+    width: 550px;
+}
+
+.main-text strong{
+    font-size: 2.3rem;
+    line-height: 50px;
+    color: var(--palatinate);
+}
+
+.main-text p{
+    color: var(--black-bean);
+    margin: 10px 0px;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.give-now-box{
+    margin-top: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--citrine);
+    box-shadow: 4px 4px var(--claret);
+}
+
+.give-now-form{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--citrine);
+}
+
+.give-input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+}
+
+.give-now-form .give-btn{
+    min-width: 120px;
+    background-color: var(--bright-pink-crayola);
+    color: var(--misty-rose);
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.green-dollar {
+    color: green;
+    font-size: 1.8rem;
+    margin-top: 15px;
+    height: 0;
+
+    background-color: var(--citrine);
+}
+
+.sign-align{
+    display: flex;
+}
+
+.currency{
+    display: flex;
+    font-size: 1.8rem;
+    margin-top: 12px;
+    height: 0;
+    margin-right: 20px;
+}
+
+@media (min-width: 1165px) {
+    .main-container {
+        margin-left: 40px;
+    }
+
+    .give-now-box {
+        flex-direction: column;
+    }
+
+    .give-now-form {
+        flex-direction: column;
+    }
+
+    .give-now-form .give-btn {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1165px) {
+    .main-container{
+        margin-left: 40px;
+    }
+    .give-now-box {
+        flex-direction: column;
+    }
+
+    .give-now-form {
+        flex-direction: column;
+    }
+
+    .give-now-form .give-btn {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+ 
+    .main-container {
+        margin-left: 20px;
+        display: flex;
+    }
+
+    .main-img {
+        order: 2;
+    }
+        
+    .give-now-box {
+        min-width: 300px;
+        margin-bottom: 20px;
+        box-shadow: none;
+    }
+    .give-now-form{
+        flex-direction: column;
+    }
+        .give-input {
+            width: calc(100% - 40px);
+            /* Adjust the width as needed */
+            margin-right: 10px;
+            background-color: white;
+            /* Add a white background color to the input */
+        }
+}
+
+@media (max-width: 1000px) {
+    .main-container {
+        flex-direction: column;
+        margin-left: 20px auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .main-img{
+        order: 2;
+    }
+}
