@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Form</title>
+    <link rel="stylesheet" href="donation-form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&family=Klee+One:wght@600&family=Mynerve&display=swap"
+        rel="stylesheet">
+        <script>
+            $(document).ready(function () {
+                    $('.donate-button').click(function () {
+                        $('.donate-button').removeClass('active');
+                        $(this).addClass('active');
+                    });
+                });
+        </script>
+</head>
+
+<body id="donation-form-flow">
+<div class="donation-form-container">
+    <h3>Select your Monthly Donation</h3>
+    <form class="form-1">
+            <div class="sign-align">
+                <input type="button" class="donate-button" value="$28">
+            </div>
+            <div class="sign-align">
+                <input type="button" class="donate-button" value="$55">
+            </div>
+
+        <div class="sign-align">
+            <input type="button" class="donate-button" value="$125">
+        </div>
+        <div class="sign-align">
+            <input type="button" class="donate-button" value="$200">
+        </div>
+        
+        <div class="sign-align">
+            <input type="number" class="other-button" value="" placeholder=" $ Other">
+        </div>
+        <div class="give-button">
+            <input type="submit" value="Donate Now" class="reformat-submit">
+            <div class="icons">
+            <i class="fa-solid fa-arrow-right" style="color: #76ea2a;"></i>
+            <i class="fa-brands fa-cc-visa" style="color: #205dc5;"></i>
+            <i class="fa-brands fa-cc-mastercard" style="color: #c10b0b;"></i>
+            <i class="fa-brands fa-cc-discover" style="color: #f59f3d;"></i>
+            <i class="fa-brands fa-cc-amex" style="color: #c229ad;"></i>
+            <i class="fab fa-paypal" style="color: #eac22e;"></i>
+            <i class="fa-brands fa-apple-pay" style="color: #b8bfcc;"></i>            
+        </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
