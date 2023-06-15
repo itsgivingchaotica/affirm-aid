@@ -4,7 +4,7 @@ $(function () {
         var currentPagePath = window.location.pathname;
 
         $(".logo").attr("href", "index.html"); 
-        $(".about-btn").attr("href", "pages/about.html"); 
-        $(".donate-btn").attr("href", "pages/donate.html"); 
+        $(".about-btn").attr("href", "about.html"); 
+        $(".donate-btn").attr("href", "donate.html"); 
     });
 });
