@@ -19,7 +19,7 @@
         rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.7.0.min.js"
             integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-        <script src="../scripts/navbar.js"></script>
+        <!-- <script src="../scripts/navbar.js"></script> -->
         <script src="../scripts/donation.js"></script>
         <script src="../scripts/footer.js"></script>
         <script>
@@ -28,6 +28,16 @@
                 var scrollY = 450;
                 window.scrollTo(scrollX, scrollY);
             });
+             $(function () {
+                    $("#navbar-placeholder").load("../components/navbar.html", function () {
+                        // Update the href values based on the current page
+                        var currentPagePath = window.location.pathname;
+
+                        $(".logo").attr("href", "../index.html");
+                        $(".about-btn").attr("href", "../pages/about.html");
+                        $(".donate-btn").attr("href", "../pages/donate.html");
+                    });
+                });
         </script>
 </head>
 
