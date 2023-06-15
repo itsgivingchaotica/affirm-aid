@@ -30,7 +30,7 @@ $(document).ready(function() {
       text: "Surgeon-Approved Hotel Accommodations"
     },
     {
-      image: "/images/lymphatic-massage.jpg",
+      image: "../images/lymphatic-massage.jpg",
       text: "Post-BBL Lymphatic Massages"
     },
     {
