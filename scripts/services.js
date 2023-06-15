@@ -6,7 +6,7 @@ $(document).ready(function() {
       text: "Laser Hair Removal & Electrolysis"
     },
     {
-      image: "./images/dgermal-fillers.jpg",
+      image: "./images/dermal-fillers.jpg",
       text: "Non-surgical Facial & Body Augmentation and Feminization"
     },
     {
