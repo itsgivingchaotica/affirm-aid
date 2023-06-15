@@ -26,7 +26,7 @@
 
                 giveBtn.addEventListener("click", function (event) {
                     event.preventDefault();
-                    window.location.href = "./pages/donate.html"; //open the donation page
+                    window.location.href = "donate.html"; //open the donation page
                 });
                 $(function () {
                     $("#navbar-placeholder").load("components/navbar.html", function () {
@@ -39,7 +39,7 @@
                     });
                 });
                 $(document).ready(function () {
-                    $('#footer-placeholder').load('./components/footer.html', function () {
+                    $('#footer-placeholder').load('components/footer.html', function () {
                         var year = document.querySelector("#year");
                         year.innerText = new Date().getFullYear();
                     });
