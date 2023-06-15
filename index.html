@@ -29,7 +29,14 @@
                     window.location.href = "./pages/donate.html"; //open the donation page
                 });
                 $(function () {
-                    $("#navbar-placeholder").load("./components/navbar.html");
+                    $("#navbar-placeholder").load("components/navbar.html", function () {
+                        // Update the href values based on the current page
+                        var currentPagePath = window.location.pathname;
+
+                        $(".logo").attr("href", "index.html"); 
+                        $(".about-btn").attr("href", "pages/about.html"); 
+                        $(".donate-btn").attr("href", "pages/donate.html"); 
+                    });
                 });
                 $(document).ready(function () {
                     $('#footer-placeholder').load('./components/footer.html', function () {

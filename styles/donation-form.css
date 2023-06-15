@@ -116,7 +116,7 @@
     margin-left: 20px;
     color: var(--palatinate);
     border: 1px solid var(--palatinate);
-    background-color: var(--misty-rose);
+    background-color: var(--citrine);
     /* margin-right: 10px; */
     font-size: 2.1rem;
     border-radius: 12px;
@@ -198,8 +198,10 @@ h3 {
     font-size: 2.5rem;
     margin-left: 20px;
     align-items: center;
+    background-color: var(--citrine);
     
 }
 .reformat-submit:hover,.reformat-submit:focus {
     color: white;
+    background-color: green;
 }
