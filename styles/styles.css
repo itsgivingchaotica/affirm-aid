@@ -340,7 +340,7 @@ a:visited {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("images/transgroup.avif");
+    background-image: url("/images/transgroup.avif");
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center top -150px;

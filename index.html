@@ -19,7 +19,6 @@
         rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.7.0.min.js"
             integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-        <script src="scripts/navbar.js"></script>
         <script src="scripts/year.js"></script>
         <script>
             document.addEventListener("DOMContentLoaded", function () {
@@ -28,6 +27,15 @@
                 giveBtn.addEventListener("click", function (event) {
                     event.preventDefault();
                     window.location.href = "./pages/donate.html"; //open the donation page
+                });
+                $(function () {
+                    $("#navbar-placeholder").load("components/navbar.html");
+                });
+                $(document).ready(function () {
+                    $('#footer-placeholder').load('../components/footer.html', function () {
+                        var year = document.querySelector("#year");
+                        year.innerText = new Date().getFullYear();
+                    });
                 });
             });
         </script>
@@ -63,6 +71,5 @@
     <footer>
         <div id="footer-placeholder"></div>
     </footer>
-    <script src="scripts/footer.js"></script>
 </body>
 </html>
