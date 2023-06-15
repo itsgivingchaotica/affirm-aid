@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate Now</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="donation-form.css" />
     <link rel="icon" href="./favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,23 +17,37 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&family=Klee+One:wght@600&family=Mynerve&display=swap"
         rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="navbar.js"></script>
+        <script src="donation.js"></script>
+        <script src="footer.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var scrollX = 0;
+                var scrollY = 450;
+                window.scrollTo(scrollX, scrollY);
+            });
+        </script>
 </head>
 
-<body>
+<body id="donations">
     <header>
         <div id="navbar-placeholder"></div>
     </header>
     <div class="donation-container">
         <div class="donation-text">
-            <h1>Your monthly gift will substantially help our fund recipients along their journey</h1>
-        </div>
-        <div class="donation-blurb">
-            <p>When you give to Affirm/Aid montly, you will directly enable us to provide the funds needed to aid access to services and aftercare that is often overlooked by insurance companies. Such essentials include laser hair removal, lymphatic massages, non-surgical facial and body treatments and injections, voice therapy, as well as surgical aftercare supplies: all essential to the mental health of trans folks. In an era where trans* rights are under attack, we wholeheartedly believe in providing support directly to the individuals who continue to make progress and live in their truth. That's why we have made it our mission to bridge the financial gap and provide crucial support to individuals seeking gender-affirming care. </p>
+            <h1>Make a lasting difference with your monthly contribution, ensuring access to crucial gender-affirming services</h1>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="navbar.js"></script>
-</body>
-
+    <div class="donation-blurb-container">
+        <div class="donation-blurb">
+            <p>When you give towards our <strong>Monthly Allyship Fund</strong>, you will directly enable us to provide the funds needed to aid access to services and aftercare that is often overlooked by insurance companies. Such essentials include regular appointments for laser hair removal, post-op lymphatic massages, non-surgical facial and body treatments and injections for gender dysphoria, voice therapy, as well as surgical aftercare supplies: all essential to the mental health of trans folks. In an era where Trans folks rights are under attack, we wholeheartedly believe in providing support directly to the individuals who continue to make progress and live in their truth. That's why we have made it our mission to bridge the financial gap and provide crucial support to individuals seeking gender-affirming care. </p>   
+        </div>
+       <div id="donation-placeholder"></div>
+    </div>
+  <footer>
+    <div id="footer-placeholder" class="footer-donate"></div>
+  </footer>
+  </body>
 </html>
