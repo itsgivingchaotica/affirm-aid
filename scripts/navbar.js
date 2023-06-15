@@ -1,5 +1,5 @@
 $(function () {
-    $("#navbar-placeholder").load("./components/navbar.html", function () {
+    $("#navbar-placeholder").load("components/navbar.html", function () {
         // Update the href values based on the current page
         var currentPagePath = window.location.pathname;
 
