@@ -2,43 +2,43 @@ $(document).ready(function() {
  //all the services funded  
   const services = [
     {
-      image: "images/electrolysis.jpg",
+      image: "./images/electrolysis.jpg",
       text: "Laser Hair Removal & Electrolysis"
     },
     {
-      image: "images/dermal-fillers.jpg",
+      image: "./images/dgermal-fillers.jpg",
       text: "Non-surgical Facial & Body Augmentation and Feminization"
     },
     {
-      image: "images/hairtransplantwoman.jpg",
+      image: "./images/hairtransplantwoman.jpg",
       text: "Hair Restoration"
     },
     {
-      image: "images/voicetherapy.jpeg",
+      image: "./images/voicetherapy.jpeg",
       text: "Voice Therapy"
     },
     {
-      image: "images/supplies.jpg",
+      image: "./images/supplies.jpg",
       text: "Surgery Aftercare Supplies"
     },
     {
-      image: "images/postop-transport.jpg",
+      image: "./images/postop-transport.jpg",
       text: "Reliable Hospital/Post-Op Appointment Transportation"
     },
     {
-      image: "images/hotel.jpg",
+      image: "./images/hotel.jpg",
       text: "Surgeon-Approved Hotel Accommodations"
     },
     {
-      image: "images/lymphatic-massage.jpg",
+      image: "./images/lymphatic-massage.jpg",
       text: "Post-BBL Lymphatic Massages"
     },
     {
-      image: "images/hyperbaric.jpg",
+      image: "./images/hyperbaric.jpg",
       text: "Hyperbaric Oxygen Therapy"
     },
     {
-      image: "images/supplies-tools.jpg",
+      image: "./images/supplies-tools.jpg",
       text: "Gender-Affirming Beauty Supplies, Tools and Accessories Marketplace"
     }
   ];
