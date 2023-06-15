@@ -16,29 +16,43 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&family=Klee+One:wght@600&family=Mynerve&display=swap"
         rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="navbar.js"></script>
+        <script src="year.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var giveBtn = document.querySelector(".give-btn");
+
+                giveBtn.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    window.location.href = "./donate.html"; //open the donation page
+                });
+
+                // $(document).ready(function () {
+                //     $('#footer-placeholder').load('footer.html', function () {
+                //         var year = document.querySelector("#year");
+                //         year.innerText = new Date().getFullYear();
+                //     });
+                // });
+
+            });
+        </script>
 </head>
 
 <body>
     <header>
         <div id="navbar-placeholder"></div>
-    <!-- <div class="nav-container">
-    <nav class="navbar">
-        <a href="./index.html" class="logo">Affirm/Aid</a>
-        <div class="options">
-        <a href="./about.html" class="about-btn">Learn More</a>
-        <a href="./donate.html" class="donate-btn">Donate</a>
-        </div>
-    </nav>
-    </div> -->
     </header>
     <section class="main-container">
         <div class="main-text">
-            <strong>Break barriers, Fund hope, Empower communities</strong>
+            <strong>Break barriers, Fund hope, <br>& Empower communities</strong>
             <p>We're nurturing a network of financial assistance to provide real access to Gender Affirmating care. There is a critical need for your sustained support. With your generosity, we can make a tangible difference in the lives of trans individuals who lack the necessary resources to fully embrace their true selves.</p>
                 
             <p>Your contribution enables us to provide essential funds for surgical recovery as well as procedures and appointments not typically covered by insurance, ensuring that trans individuals receive the care they
             deserve.</p>
             <div class="give-now-box">
+            
             <form class="give-now-form">
                 <div class = "sign-align">
                 <i class="fa-solid fa-dollar-sign green-dollar"></i>
@@ -53,9 +67,9 @@
             <img src="/images/transflag.png" alt="three cartoon transgender people holding up hands and arms in celebration">
         </div>
     </section>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="navbar.js"></script>
+    <footer>
+        <div id="footer-placeholder"></div>
+    </footer>
+    <script src="footer.js"></script>
 </body>
-
 </html>
