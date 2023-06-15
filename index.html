@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Affirm/Aid</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,24 +18,16 @@
         rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.7.0.min.js"
             integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-        <script src="navbar.js"></script>
-        <script src="year.js"></script>
+        <script src="./scripts/navbar.js"></script>
+        <script src="./scripts/year.js"></script>
         <script>
             document.addEventListener("DOMContentLoaded", function () {
                 var giveBtn = document.querySelector(".give-btn");
 
                 giveBtn.addEventListener("click", function (event) {
                     event.preventDefault();
-                    window.location.href = "./donate.html"; //open the donation page
+                    window.location.href = "./pages/donate.html"; //open the donation page
                 });
-
-                // $(document).ready(function () {
-                //     $('#footer-placeholder').load('footer.html', function () {
-                //         var year = document.querySelector("#year");
-                //         year.innerText = new Date().getFullYear();
-                //     });
-                // });
-
             });
         </script>
 </head>
@@ -70,6 +62,6 @@
     <footer>
         <div id="footer-placeholder"></div>
     </footer>
-    <script src="footer.js"></script>
+    <script src="/scripts/footer.js"></script>
 </body>
 </html>
