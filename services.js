@@ -57,8 +57,10 @@ $(document).ready(function() {
     serviceText.append($("<strong>").text(service.text));
 
     if (index % 2 === 0){
+    serviceContainer.addClass("hover-even");
     serviceContainer.append(serviceImg, serviceText);
     } else {
+        serviceContainer.addClass("hover-odd");
         serviceContainer.append(serviceText,serviceImg);
     }
     servicesContainer.append(serviceContainer);
