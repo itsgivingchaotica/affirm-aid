@@ -1,3 +1,3 @@
 $(function() {
-    $("#donation-placeholder").load("../components/donation-form.html");
+    $("#donation-placeholder").load("components/donation-form.html");
 });
